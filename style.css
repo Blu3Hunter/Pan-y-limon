@@ -1,0 +1,28 @@
+.navbar-link {
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: white;
+    transition: width 0.3s ease-in-out;
+    -webkit-transition: width 0.3s ease-in-out;
+}
+
+.navbar-link:hover::after {
+    width: 100%;
+    left: 0;
+    background: white;
+}
+
+.brand-color-text{
+    color: #4D8E01
+}
